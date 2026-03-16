@@ -16,7 +16,7 @@
         pname = "graft";
         version = self.shortRev or "dev";
         src = ./.;
-        vendorHash = "sha256-1yH+Ln8H4+1pku0J2guZ/PlBnPqICmQjYoUbJMLxDbo=";
+        vendorHash = "sha256-+uXiFwxj8LKOf04caPm7RVCFNwbyGc+LAuG03mty1x0=";
         goSum = ./go.sum;
         env.CGO_ENABLED = "0";
         ldflags = ["-w" "-s"];
