@@ -13,10 +13,10 @@ A local-first remote development platform. Work with remote files and commands a
 
 ## Supported Platforms
 
-| | Local (client) | Remote (target) |
-|---|---|---|
-| macOS | yes | |
-| Linux | yes | yes |
+|       | Local (client) | Remote (target) |
+| ----- | -------------- | --------------- |
+| macOS | yes            |                 |
+| Linux | yes            | yes             |
 
 ## Install
 
@@ -58,17 +58,17 @@ graft forward go make          # forward commands to the remote
 
 ## Commands
 
-| Command | Description |
-|---|---|
-| `connect` | Connect to a remote machine (SSH or Docker) |
-| `disconnect` | Disconnect from a remote connection |
-| `run` | Run a command on the remote |
-| `shell` | Open a remote shell |
-| `sync` | Sync files to the remote |
-| `forward` | Forward local commands to the remote |
-| `status` | Show connection status |
-| `doctor` | Check environment setup and diagnose issues |
-| `init` | Generate a graft.yaml configuration file for future `graft connect`s |
+| Command      | Description                                                          |
+| ------------ | -------------------------------------------------------------------- |
+| `connect`    | Connect to a remote machine (SSH or Docker)                          |
+| `disconnect` | Disconnect from a remote connection                                  |
+| `run`        | Run a command on the remote                                          |
+| `shell`      | Open a remote shell                                                  |
+| `sync`       | Sync files to the remote                                             |
+| `forward`    | Forward local commands to the remote                                 |
+| `status`     | Show connection status                                               |
+| `doctor`     | Check environment setup and diagnose issues                          |
+| `init`       | Generate a graft.yaml configuration file for future `graft connect`s |
 
 ## Coming Soon
 
@@ -82,6 +82,16 @@ See [docs/architecture.md](docs/architecture.md) for how graft works internally.
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines, including our [AI usage policy](CONTRIBUTING.md#ai-usage-policy). This project uses AI tools responsibly - all code is human-reviewed before merging, and all contributions must disclose AI usage.
+
+## Nix Install
+
+```nix
+# In your flake inputs:
+graft.url = "github:edaniels/graft";
+
+# In your packages:
+graft.packages.${system}.default
+```
 
 ## Development
 
