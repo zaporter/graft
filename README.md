@@ -2,7 +2,7 @@
 
 # <a href="https://graft.run"><img src="assets/logo.svg" width="36" height="36" alt="Graft logo"></a> [graft](https://graft.run)
 
-A local-first remote development platform. Work with remote files and commands as if they were local.
+A local-First remote development platform. Work with remote files and commands as if they were local.
 
 [![CI](https://github.com/edaniels/graft/actions/workflows/ci.yml/badge.svg)](https://github.com/edaniels/graft/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
