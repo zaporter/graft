@@ -13,6 +13,8 @@ import (
 	"golang.org/x/term"
 
 	"github.com/edaniels/graft/errors"
+	// test dep
+	_ "go.uber.org/zap"
 )
 
 // NewLogger returns a logger that excludes logs less severe than the default, unless one is set by GRAFT_LOG_LEVEL.
